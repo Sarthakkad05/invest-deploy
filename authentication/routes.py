@@ -12,7 +12,8 @@ import datetime
 router = APIRouter()
 load_dotenv()
 
-cred = credentials.Certificate("authentication/firebase-adminsdk.json")
+cred = credentials.Certificate("/opt/render/project/src/authentication/firebase-adminsdk.json")
+
 firebase_admin.initialize_app(cred)
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "authentication/big-query-key.json"
