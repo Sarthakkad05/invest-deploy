@@ -4,7 +4,7 @@ import pandas as pd
 from google.cloud import bigquery
 from datetime import datetime
 from typing import Optional
-from backend.utils.helpers import fetch_stock_details, fetch_balance_sheet, fetch_cash_flow, fetch_income_statements
+from utils.helpers import fetch_stock_details, fetch_balance_sheet, fetch_cash_flow, fetch_income_statements
 
 stock_search_router = APIRouter()
 
