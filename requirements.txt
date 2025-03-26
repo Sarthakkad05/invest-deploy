@@ -1,0 +1,11 @@
+fastapi 
+uvicorn 
+requests 
+yfinance 
+pandas 
+google-cloud-bigquery 
+google-generativeai 
+googletrans 
+firebase-admin 
+python-dotenv     
+pydantic
