@@ -4,7 +4,7 @@ from pydantic import BaseModel
 import requests
 from google.cloud import bigquery
 from datetime import datetime
-from backend.utils.helpers import fetch_stock_details, fetch_balance_sheet, fetch_cash_flow, fetch_income_statements
+from utils.helpers import fetch_stock_details, fetch_balance_sheet, fetch_cash_flow, fetch_income_statements
 
 comparison_router = APIRouter()
 
