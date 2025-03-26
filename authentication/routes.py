@@ -12,10 +12,10 @@ import datetime
 router = APIRouter()
 load_dotenv()
 
-cred = credentials.Certificate("backend/authentication/firebase-adminsdk.json")
+cred = credentials.Certificate("authentication/firebase-adminsdk.json")
 firebase_admin.initialize_app(cred)
 
-os.environ["BIG_QUERY_CREDENTIALS"] = "backend/authentication/big-query-key.json"
+os.environ["BIG_QUERY_CREDENTIALS"] = "authentication/big-query-key.json"
 # bigquery_client = bigquery.Client()
 
 bigquery_client = bigquery.Client(project="smiling-sweep-450612-g4")
