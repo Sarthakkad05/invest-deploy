@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.authentication.routes import router
-from backend.chatbot.bot import  bot_router
-from backend.screener.stock_search import stock_search_router
-from backend.stock_comparison.comparison import comparison_router
-from backend.news_service.news_service import router as news_router
+from authentication.routes import router
+from chatbot.bot import  bot_router
+from screener.stock_search import stock_search_router
+from stock_comparison.comparison import comparison_router
+from news_service.news_service import router as news_router
 
 app = FastAPI()
 
