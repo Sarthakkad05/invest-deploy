@@ -1,9 +1,0 @@
-type: object
-properties:
-  prediction:
-    type: number
-  confidence:
-    type: number
-example:
-  prediction: 1
-  confidence: 0.98
