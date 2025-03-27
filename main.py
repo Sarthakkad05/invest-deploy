@@ -15,7 +15,7 @@ app.include_router(comparison_router)
 app.include_router(news_router)
 
 origins = [
-    "https://investiq-frontend-2zg9xqrv8-sarthakkad2005-gmailcoms-projects.vercel.app",
+    "https://investiq-frontend-2zg9xqrv8-sarthakkad2005-gmailcoms-projects.vercel.app"
 ]
 
 app.add_middleware(
