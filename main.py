@@ -8,11 +8,12 @@ from news_service.news_service import router as news_router
 
 app = FastAPI()
 
-# origins = [
-#     "https://www,investiq.com",
-#     "https://investiq-frontend-2zg9xqrv8-sarthakkad2005-gmailcoms-projects.vercel.app",
-#     "https://investiq-frontend-846ovx94x-sarthakkad2005-gmailcoms-projects.vercel.app"
-# ]
+origins = [
+    "https://www,investiq.com",
+    "https://investiq-frontend-2zg9xqrv8-sarthakkad2005-gmailcoms-projects.vercel.app",
+    "https://investiq-frontend-846ovx94x-sarthakkad2005-gmailcoms-projects.vercel.app",
+    "https://iinvest-iq.netlify.app"
+]
 
 app.add_middleware(
     CORSMiddleware,
