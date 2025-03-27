@@ -9,6 +9,7 @@ from news_service.news_service import router as news_router
 app = FastAPI()
 
 origins = [
+    "https://www,investiq.com"
     "https://investiq-frontend-2zg9xqrv8-sarthakkad2005-gmailcoms-projects.vercel.app"
 ]
 
