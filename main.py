@@ -14,12 +14,16 @@ app.include_router(stock_search_router)
 app.include_router(comparison_router)
 app.include_router(news_router)
 
+origins = [
+    "https://investiq-frontend-2zg9xqrv8-sarthakkad2005-gmailcoms-projects.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Change "*" to frontend domain for security
+    allow_origins=origins,  # 👈 Add your frontend URL here
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allow all headers
 )
 @app.get("/")
 @app.head("/")
