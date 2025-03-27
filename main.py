@@ -8,12 +8,6 @@ from news_service.news_service import router as news_router
 
 app = FastAPI()
 
-app.include_router(router)
-app.include_router(bot_router)
-app.include_router(stock_search_router)
-app.include_router(comparison_router)
-app.include_router(news_router)
-
 origins = [
     "https://investiq-frontend-2zg9xqrv8-sarthakkad2005-gmailcoms-projects.vercel.app"
 ]
@@ -25,6 +19,16 @@ app.add_middleware(
     allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
     allow_headers=["*"],  # Allow all headers
 )
+
+app.include_router(router)
+app.include_router(bot_router)
+app.include_router(stock_search_router)
+app.include_router(comparison_router)
+app.include_router(news_router)
+
+
+
+
 @app.get("/")
 @app.head("/")
 def read_root():
