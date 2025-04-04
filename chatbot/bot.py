@@ -7,6 +7,8 @@ from pydantic import BaseModel
 
 bot_router = APIRouter()
 
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "authentication/big-query-key.json"
+
 client = bigquery.Client(project='agile-antler-455616-f3')
 
 PROJECT_ID = 'agile-antler-455616-f3'
