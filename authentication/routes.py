@@ -19,7 +19,7 @@ firebase_admin.initialize_app(cred)
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "authentication/big-query-key.json"
 # bigquery_client = bigquery.Client()
 
-bigquery_client = bigquery.Client(project="smiling-sweep-450612-g4")
+bigquery_client = bigquery.Client(project="agile-antler-455616-f3")
 
 
 DATASET_ID = 'ai_training_dataset'
