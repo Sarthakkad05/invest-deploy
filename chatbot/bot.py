@@ -28,7 +28,7 @@ def get_latest_user_activity(user_id: str):
     AND stock2 IS NOT NULL
     ORDER BY timestamp DESC
     LIMIT 1;
-    """
+    """ 
     results = client.query(query).to_dataframe()
     return results.to_dict(orient="records")[0] if not results.empty else {}
 
