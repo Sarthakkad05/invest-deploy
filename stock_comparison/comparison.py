@@ -8,11 +8,11 @@ from utils.helpers import fetch_stock_details, fetch_balance_sheet, fetch_cash_f
 
 comparison_router = APIRouter()
 
-BIG_QUERY_ID = 'smiling-sweep-450612-g4'
+BIG_QUERY_ID = 'agile-antler-455616-f3'
 BIG_QUERY_DATASET = 'ai_training_dataset'
 BIG_QUERY_TABLE = 'user_activity'
 
-client = bigquery.Client(project="")
+client = bigquery.Client(project="agile-antler-455616-f3")
 
 def log_compared_stocks(user_id: str, stock1: str, stock2: str, stock1_details: dict, stock2_details: dict):
     table_id = f"{BIG_QUERY_ID}.{BIG_QUERY_DATASET}.{BIG_QUERY_TABLE}"
