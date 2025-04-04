@@ -7,7 +7,7 @@ from pydantic import BaseModel
 
 bot_router = APIRouter()
 
-client = bigquery.Client(project="smiling-sweep-450612-g4")
+client = bigquery.Client(project='agile-antler-455616-f3')
 
 PROJECT_ID = 'agile-antler-455616-f3'
 BQ_DATASET = 'ai_training_dataset'
