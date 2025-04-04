@@ -9,9 +9,9 @@ bot_router = APIRouter()
 
 client = bigquery.Client(project="smiling-sweep-450612-g4")
 
-PROJECT_ID = "smiling-sweep-450612-g4"
-BQ_DATASET = "ai_training_dataset"
-BQ_TABLE = "user_activity"
+PROJECT_ID = 'agile-antler-455616-f3'
+BQ_DATASET = 'ai_training_dataset'
+BQ_TABLE = 'user_activity'
 MODEL_NAME = "gemini-2.0-flash-001"
 LOCATION = "us-central1"
 
@@ -20,7 +20,7 @@ def get_latest_user_activity(user_id: str):
     SELECT stock1, stock2, timestamp, stock_symbol, stock1_sector,
     stock2_sector, stock1_pe_ratio, stock2_pe_ratio, stock1_market_cap,
     stock2_market_cap
-    FROM `smiling-sweep-450612-g4.ai_training_dataset.user_activity`
+    FROM `agile-antler-455616-f3.ai_training_dataset.user_activity`
     WHERE user_id = '{user_id}'
     AND stock1 IS NOT NULL
     AND stock2 IS NOT NULL
