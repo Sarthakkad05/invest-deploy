@@ -4,6 +4,7 @@ from google.genai import Client
 from google.genai.types import Content, Part, GenerateContentConfig, SafetySetting
 from datetime import datetime
 from pydantic import BaseModel
+import os
 
 bot_router = APIRouter()
 
